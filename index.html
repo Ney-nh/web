@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.I.R.T</title>
+
+    <!--------------- Mis estilos --------------->
+    <link rel="stylesheet" href="estilos.css">
+    <!--------------- ----------- --------------->
+
+    <!--------------- Bootstrap --------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--------------- --------- --------------->
+</head>
+<body>
+    <div class="contenedor-general">
+
+        <div class="contenedor-cuerpo">
+            <img src="./logo.webp" alt="" srcset="" class="logo">
+            <h1>Bienvenidos a D.I.R.T.</h1>
+            <p class="animar">No dones por moda, dona por una causa 😎</p>
+
+            <div class="contenedor-botones">
+                <button type="button" class="btn btn-outline-success" id="Reclamar" data-bs-toggle="modal" data-bs-target="#Donar">Donar</button>
+
+                <!-- Modal donar -->
+                <div class="modal fade" id="Donar" tabindex="-1" aria-labelledby="DonarLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="DonarLabel">¡Muchas Gracias! 😁🎉🎁</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        
+                            <p>En esta pestaña podrás ingresar tus datos y alimentos que donarás.</p>
+                            
+
+                        <div class="input-group input-group-sm mb-1">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="nombreDonante">
+
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Curso:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="cursoDonante">
+                        </div>
+                        
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">¿Qué alimento ingresaste?</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="alimentoDonante">
+                        </div>
+                          
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="guardarDonante">Guardar 🗳</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-outline-warning" id="Reclamar" data-bs-toggle="modal" data-bs-target="#Retirar">Retirar</button>
+
+                <!-- Modal retirar -->
+                <div class="modal fade" id="Retirar" tabindex="-1" aria-labelledby="RetirarLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="RetirarLabel">¡Disfruta! 🤤🧁😋</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        
+                            <p>En esta pestaña podrás ingresar tus datos y alimentos que retirarás.</p>
+                            
+
+                        <div class="input-group input-group-sm mb-1">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="nombreRetiro">
+
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Curso:</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="cursoRetiro">
+                        </div>
+                        
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">¿Qué alimento retiraste?</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="alimentoRetiro">
+                        </div>
+                          
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="guardarRetiro">Guardar 🗳</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="creditos"></footer>
+            <p>&copy; 2024 Mateo Urzola. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
